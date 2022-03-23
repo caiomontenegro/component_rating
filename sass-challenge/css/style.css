@@ -21,7 +21,15 @@ body ul {
 .header {
   display: flex;
   justify-content: space-between;
-  @inclue mixins.container;
+  max-width: 1170px;
+  padding: 1.5rem 0;
+  margin: 0 auto;
+}
+@media (max-width: 825px) {
+  .header {
+    padding: 1.1rem;
+    justify-content: center;
+  }
 }
 .header-brand {
   color: #FFF;
@@ -32,6 +40,11 @@ body ul {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media (max-width: 825px) {
+  .header-navbar ul {
+    display: none;
+  }
 }
 .header-navbar li {
   margin: 0 1rem;
@@ -49,6 +62,11 @@ body ul {
   align-items: center;
   justify-content: center;
   height: 100%;
+}
+@media (max-width: 825px) {
+  .header-social-media ul {
+    display: none;
+  }
 }
 .header-social-media li {
   margin: 0 1rem;
@@ -68,6 +86,11 @@ body ul {
   justify-content: space-between;
   padding: 0;
 }
+@media (max-width: 825px) {
+  .gallery {
+    flex-direction: column;
+  }
+}
 .gallery-card {
   width: 31%;
   height: 400px;
@@ -77,6 +100,12 @@ body ul {
   justify-content: center;
   flex-direction: column;
   color: #FFF;
+}
+@media (max-width: 825px) {
+  .gallery-card {
+    width: 90%;
+    margin-bottom: 6%;
+  }
 }
 .gallery-card-title {
   font-size: 2rem;

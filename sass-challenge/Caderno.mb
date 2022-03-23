@@ -98,6 +98,17 @@ Com o nesting, podemos digitar no nosso arquivo SASS:
         a 
             color: blue
 
+Caso queiramos criar um seletor para o elementos filho 
+que "herde" alguns parametros do seletor pai, podemos 
+usar o & comercial.
+Ex:
+
+    header {
+        &.ul{
+            
+        }
+    }
+
 
 ########################### Mixins ############################
 

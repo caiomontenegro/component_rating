@@ -1,0 +1,99 @@
+@use 'variables'
+@use 'mixins'
+    
+* 
+    padding: 0
+    margin: 0
+    border: 0
+    box-sizing: border-box
+
+body
+    background-color: variables.$color-black
+
+.rating 
+    @include mixins.rating
+
+    .rating__simbol 
+        display: flex
+        justify-content: flex-start
+        margin-bottom: 10px
+        
+        .simbol
+            padding: 6px 13px
+            font-size: 30px
+            color: variables.$color-orange
+            background-color: variables.$color-lightDarkGray
+            border-radius: 50%
+            transition: 0.35s
+
+            &:hover
+                color: variables.$color-lightDarkGray
+                background-color: variables.$color-orange
+        
+    &__title 
+        @include mixins.title
+
+    &__description 
+        @include mixins.description
+
+    .evaluation
+        display: flex
+        margin-top: 25px
+        align-items: center
+        justify-content: space-between
+
+        &__grade
+            padding: 15px 20px
+            border-radius: 50%
+            font-size: 17px
+            font-weight: bold
+            color: variables.$color-gray
+            background-color: variables.$color-lightDarkGray
+            transition: 0.35s
+
+            &:hover
+                background-color: variables.$color-lightGray
+
+            &:focus
+                color: variables.$color-white
+                background-color: variables.$color-orange
+
+    &__button
+        margin-top: 25px
+        border-radius: 25px
+        padding: 15px
+        font-size: 20px
+        text-transform: uppercase
+        letter-spacing: 2px
+        color: variables.$color-white
+        background-color: variables.$color-orange
+        transition: 0.30s
+
+        &:hover
+            color: variables.$color-orange
+            background-color: variables.$color-white
+
+.rating--done 
+    @include mixins.rating
+    align-items: center
+
+    &__title--done
+        @include mixins.title
+
+    &__description--done
+        @include mixins.description
+
+    
+
+footer
+    color: variables.$color-white
+    bottom: 0%
+    width: 100%
+
+    .attribution
+        font-style: italic
+        font-size: 18px
+
+    
+        
+        

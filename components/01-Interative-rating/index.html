@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- font style -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="stylesheet" href="css/rating.css">
+</head>
+<body>
+  <main>
+    <!-- Rating state start -->
+    <div class="rating">
+      <div class="rating__simbol">
+        <div class="simbol">&#9733;</div>
+      </div> 
+      <div class="rating__title">How did we do?</div>
+      <div class="rating__description">
+        Please let us know how we did with your support request. All feedback is appreciated
+        to help us improve our offering!
+      </div>
+      <div class="evaluation">
+        <button class="evaluation__grade" id="1">1</button>
+        <button class="evaluation__grade" id="2">2</button>
+        <button class="evaluation__grade" id="3">3</button>
+        <button class="evaluation__grade" id="4">4</button>
+        <button class="evaluation__grade" id="5">5</button>
+      </div>
+      <button type="submit" class="rating__button">Submit</button>
+    </div>
+    <!-- Rating state end -->
+    <!-- Thank you state start -->
+    <!-- You selected Add rating here --> 
+    <div class="rating--done">
+      <div class="rating--done__img">
+        <img src="images/illustration-thank-you.svg" alt="">
+      </div>
+      <div class="rating--done__title--done">Thank you!</div>
+      <div class="rating--done__description--done">
+        We appreciate you taking the time to give a rating. If you ever need more support,
+        don’t hesitate to get in touch!
+        Thank you state end
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Caio Montenegro</a>.
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,121 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #121417;
+}
+
+.rating {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: 15rem auto;
+  padding: 35px;
+  border-radius: 20px;
+  font-family: "Overpass";
+  background-color: #252d37;
+}
+.rating .rating__simbol {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+.rating .rating__simbol .simbol {
+  padding: 6px 13px;
+  font-size: 30px;
+  color: #fb7413;
+  background-color: #344250;
+  border-radius: 50%;
+  transition: 0.35s;
+}
+.rating .rating__simbol .simbol:hover {
+  color: #344250;
+  background-color: #fb7413;
+}
+.rating__title {
+  color: #FFF;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 15px;
+}
+.rating__description {
+  color: #7c8798;
+  margin-top: 15px;
+  line-height: 25px;
+}
+.rating .evaluation {
+  display: flex;
+  margin-top: 25px;
+  align-items: center;
+  justify-content: space-between;
+}
+.rating .evaluation__grade {
+  padding: 15px 20px;
+  border-radius: 50%;
+  font-size: 17px;
+  font-weight: bold;
+  color: #7c8798;
+  background-color: #344250;
+  transition: 0.35s;
+}
+.rating .evaluation__grade:hover {
+  background-color: #959eac;
+}
+.rating .evaluation__grade:focus {
+  color: #FFF;
+  background-color: #fb7413;
+}
+.rating__button {
+  margin-top: 25px;
+  border-radius: 25px;
+  padding: 15px;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #FFF;
+  background-color: #fb7413;
+  transition: 0.3s;
+}
+.rating__button:hover {
+  color: #fb7413;
+  background-color: #FFF;
+}
+
+.rating--done {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: 15rem auto;
+  padding: 35px;
+  border-radius: 20px;
+  font-family: "Overpass";
+  background-color: #252d37;
+  align-items: center;
+}
+.rating--done__title--done {
+  color: #FFF;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 15px;
+}
+.rating--done__description--done {
+  color: #7c8798;
+  margin-top: 15px;
+  line-height: 25px;
+}
+
+footer {
+  color: #FFF;
+  bottom: 0%;
+  width: 100%;
+}
+footer .attribution {
+  font-style: italic;
+  font-size: 18px;
+}
+
+/*# sourceMappingURL=rating.css.map */

@@ -1,0 +1,22 @@
+@use 'variables'
+
+@mixin rating   
+    display: flex
+    flex-direction: column
+    width: 400px
+    margin: 15rem auto
+    padding: 35px
+    border-radius: 20px
+    font-family: 'Overpass'
+    background-color: variables.$color-darkGray
+
+@mixin title
+    color: variables.$color-white
+    font-weight: bold
+    font-size: 30px
+    margin-top: 15px
+
+@mixin description
+    color: variables.$color-gray
+    margin-top: 15px
+    line-height: 25px

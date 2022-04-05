@@ -39,7 +39,7 @@ Instale as seguintes extensöes no VScode:
 
 - Abra o console na pasta raís dos arquivos, e digite o comando:
 
-    sass -watch sass/styles.sass:css/style.css
+    sass --watch sass/styles.sass:css/style.css
 
     Enquanto este comando estar rodando no console, todo o codigo
     escrito no arquivo SASS sera escrito em CSS de form otimizada,

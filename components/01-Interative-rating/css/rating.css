@@ -13,7 +13,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 400px;
-  margin: 15rem auto;
+  margin: 10rem auto;
   padding: 35px;
   border-radius: 20px;
   font-family: "Overpass";
@@ -89,11 +89,12 @@ body {
   display: flex;
   flex-direction: column;
   width: 400px;
-  margin: 15rem auto;
+  margin: 10rem auto;
   padding: 35px;
   border-radius: 20px;
   font-family: "Overpass";
   background-color: #252d37;
+  display: none;
   align-items: center;
 }
 .rating--done__title--done {
@@ -102,16 +103,26 @@ body {
   font-size: 30px;
   margin-top: 15px;
 }
+.rating--done__confirm {
+  margin-top: 10px;
+  padding: 10px 10px 7px 10px;
+  color: #fb7413;
+  background-color: #344250;
+  border-radius: 20px;
+}
 .rating--done__description--done {
   color: #7c8798;
   margin-top: 15px;
   line-height: 25px;
+  text-align: center;
 }
 
 footer {
   color: #FFF;
+  position: absolute;
   bottom: 0%;
   width: 100%;
+  text-align: center;
 }
 footer .attribution {
   font-style: italic;

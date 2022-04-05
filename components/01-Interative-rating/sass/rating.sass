@@ -73,22 +73,33 @@ body
             color: variables.$color-orange
             background-color: variables.$color-white
 
-.rating--done 
+.rating--done
     @include mixins.rating
+    display: none
     align-items: center
 
     &__title--done
         @include mixins.title
 
+    &__confirm
+        margin-top: 10px
+        padding: 10px 10px 7px 10px
+        color: variables.$color-orange
+        background-color: variables.$color-lightDarkGray
+        border-radius: 20px
+
     &__description--done
         @include mixins.description
+        text-align: center
 
     
 
 footer
     color: variables.$color-white
+    position: absolute
     bottom: 0%
     width: 100%
+    text-align: center
 
     .attribution
         font-style: italic

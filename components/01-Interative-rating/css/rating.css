@@ -13,7 +13,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 400px;
-  margin: 10rem auto;
+  margin: 6rem auto;
   padding: 35px;
   border-radius: 20px;
   font-family: "Overpass";
@@ -64,10 +64,7 @@ body {
 }
 .rating .evaluation__grade:hover {
   background-color: #959eac;
-}
-.rating .evaluation__grade:focus {
-  color: #FFF;
-  background-color: #fb7413;
+  cursor: pointer;
 }
 .rating__button {
   margin-top: 25px;
@@ -81,6 +78,7 @@ body {
   transition: 0.3s;
 }
 .rating__button:hover {
+  cursor: pointer;
   color: #fb7413;
   background-color: #FFF;
 }
@@ -89,7 +87,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 400px;
-  margin: 10rem auto;
+  margin: 6rem auto;
   padding: 35px;
   border-radius: 20px;
   font-family: "Overpass";

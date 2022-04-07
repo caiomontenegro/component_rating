@@ -25,13 +25,22 @@ function grading(rating) {
     }
 }
 
+let rating = document.querySelector('div.rating')
+let ratingBlock = document.querySelector('div.rating--block')
+let ratingDone = document.querySelector('div.rating--done')
+
 function confirm() {
-    let rating = document.querySelector('div.rating')
-    let ratingDone = document.querySelector('div.rating--done')
     if(evaluation === null) {
-        alert('Please enter your rating before submitting your review.')
+        ratingBlock.style.display = 'flex'
+        rating.style.display = 'none'
     } else {
         rating.style.display = 'none'
         ratingDone.style.display = 'flex'
     }
 }
+
+function goBack() {
+    rating.style.display = 'flex'
+    ratingBlock.style.display = 'none'
+}
+

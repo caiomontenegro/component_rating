@@ -3,40 +3,40 @@ let selected = false
 let number = null
 
 
-function grading(rating) {
+function setGrading(rating) {
     if(selected === false ) {
         number = rating
     }
     selected = true
-    console.log(number)
-    let confirm = document.querySelector('div.confirm-js')
+    let confirm = document.querySelector('.confirm-js')
     let button = document.getElementById(rating)
     evaluation = rating
     confirm.innerHTML = `You selected ${evaluation} out of 5`
-    button.style.backgroundColor = '#fb7413'
-    button.style.color = 'white'
+    
+    button.classList.add('evaluation__set-grade')
+    // button.style.backgroundColor = '#fb7413'
+    // button.style.color = 'white'
     if (number !== evaluation) {
         let old = document.getElementById(number)
-        old.style.backgroundColor = '#344250'
-        old.style.color = '#7c8798'
-        console.log('desliga o anterior')
+        old.classList.remove('evaluation__set-grade')
+        // old.style.backgroundColor = '#344250'
+        // old.style.color = '#7c8798'
         number = rating
-        console.log(number)
     }
 }
 
-let rating = document.querySelector('div.rating')
-let ratingBlock = document.querySelector('div.rating--block')
-let ratingDone = document.querySelector('div.rating--done')
+let rating = document.querySelector('.rating-js')
+let ratingBlock = document.querySelector('.rating--block-js')
+let ratingDone = document.querySelector('.rating--done-js')
 
 function confirm() {
     if(evaluation === null) {
         ratingBlock.style.display = 'flex'
         rating.style.display = 'none'
-    } else {
-        rating.style.display = 'none'
-        ratingDone.style.display = 'flex'
+        return
     }
+    rating.style.display = 'none'
+    ratingDone.style.display = 'flex'
 }
 
 function goBack() {

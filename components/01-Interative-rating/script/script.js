@@ -14,13 +14,9 @@ function setGrading(rating) {
     confirm.innerHTML = `You selected ${evaluation} out of 5`
     
     button.classList.add('evaluation__set-grade')
-    // button.style.backgroundColor = '#fb7413'
-    // button.style.color = 'white'
     if (number !== evaluation) {
         let old = document.getElementById(number)
         old.classList.remove('evaluation__set-grade')
-        // old.style.backgroundColor = '#344250'
-        // old.style.color = '#7c8798'
         number = rating
     }
 }

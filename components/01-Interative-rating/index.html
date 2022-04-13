@@ -12,11 +12,11 @@
 </head>
 <body>
   <main>
-    <div class="rating--block">
+    <div class="rating--block rating--block-js">
       Please enter your rating before submitting your review.
       <button class="rating--block__return" onclick="goBack()">Okay</button>
     </div>
-    <div class="rating">
+    <div class="rating rating-js">
       <div class="rating__simbol">
         <div class="simbol">&#9733;</div>
       </div> 
@@ -26,15 +26,15 @@
         to help us improve our offering!
       </div>
       <div class="evaluation">
-        <button class="evaluation__grade" id="1" onclick="grading(1)">1</button>
-        <button class="evaluation__grade" id="2" onclick="grading(2)">2</button>
-        <button class="evaluation__grade" id="3" onclick="grading(3)">3</button>
-        <button class="evaluation__grade" id="4" onclick="grading(4)">4</button>
-        <button class="evaluation__grade" id="5" onclick="grading(5)">5</button>
+        <button class="evaluation__grade evaluation__grade-js" id="1" onclick="setGrading(1)">1</button>
+        <button class="evaluation__grade evaluation__grade-js" id="2" onclick="setGrading(2)">2</button>
+        <button class="evaluation__grade evaluation__grade-js" id="3" onclick="setGrading(3)">3</button>
+        <button class="evaluation__grade evaluation__grade-js" id="4" onclick="setGrading(4)">4</button>
+        <button class="evaluation__grade evaluation__grade-js" id="5" onclick="setGrading(5)">5</button>
       </div>
       <button type="submit" class="rating__button" onclick="confirm()">Submit</button>
     </div>
-    <div class="rating--done">
+    <div class="rating--done rating--done-js">
       <div class="rating--done__img">
         <img src="images/illustration-thank-you.svg" alt="">
       </div>

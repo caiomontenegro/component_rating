@@ -19,12 +19,12 @@ body {
   font-family: "Overpass";
   background-color: #252d37;
 }
-.rating .rating__simbol {
+.rating__simbol {
   display: flex;
   justify-content: flex-start;
   margin-bottom: 10px;
 }
-.rating .rating__simbol .simbol {
+.rating__simbol .simbol {
   padding: 6px 13px;
   font-size: 30px;
   color: #fb7413;
@@ -32,7 +32,7 @@ body {
   border-radius: 50%;
   transition: 0.35s;
 }
-.rating .rating__simbol .simbol:hover {
+.rating__simbol .simbol:hover {
   color: #344250;
   background-color: #fb7413;
 }
@@ -65,6 +65,14 @@ body {
 .rating .evaluation__grade:hover {
   background-color: #959eac;
   cursor: pointer;
+}
+.rating .evaluation__set-grade {
+  color: #FFF;
+  background-color: #fb7413;
+}
+.rating .evaluation__set-grade:hover {
+  color: #FFF;
+  background-color: #fb7413;
 }
 .rating__button {
   margin-top: 25px;

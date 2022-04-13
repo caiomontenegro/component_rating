@@ -15,73 +15,73 @@ body {
 .rating  {
     @include mixins.rating;
 
-    &__simbol {
-        display: flex;
-        justify-content: flex-start;
-        margin-bottom: 10px;
+&__simbol {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
 
-        .simbol {
-            padding: 6px 13px;
-            font-size: 30px;
-            color: variables.$color-orange;
-            background-color: variables.$color-lightDarkGray;
-            border-radius: 50%;
-            transition: 0.35s;
+.simbol {
+    padding: 6px 13px;
+    font-size: 30px;
+    color: variables.$color-orange;
+    background-color: variables.$color-lightDarkGray;
+    border-radius: 50%;
+    transition: 0.35s;
 
-            &:hover {
-                color: variables.$color-lightDarkGray;
-                background-color: variables.$color-orange;
-            }
-        }
-    }        
-    &__title {
-        @include mixins.title;
-    }
+&:hover {
+    color: variables.$color-lightDarkGray;
+    background-color: variables.$color-orange;
+}
+}
+}        
+&__title {
+    @include mixins.title;
+}
 
-    &__description {
-        @include mixins.description;
-    }
+&__description {
+    @include mixins.description;
+}
 
-    .evaluation {
-        display: flex;
-        margin-top: 25px;
-        align-items: center;
-        justify-content: space-between;
+.evaluation {
+    display: flex;
+    margin-top: 25px;
+    align-items: center;
+    justify-content: space-between;
 
-        &__grade {
-            padding: 15px 20px;
-            border-radius: 50%;
-            font-size: 17px;
-            font-weight: bold;
-            color: variables.$color-gray;
-            background-color: variables.$color-lightDarkGray;
-            transition: 0.35s;
+&__grade {
+    padding: 15px 20px;
+    border-radius: 50%;
+    font-size: 17px;
+    font-weight: bold;
+    color: variables.$color-gray;
+    background-color: variables.$color-lightDarkGray;
+    transition: 0.35s;
 
-            &:hover {
-                background-color: variables.$color-lightGray;
-                cursor: pointer;
-            }
-        }        
+&:hover {
+    background-color: variables.$color-lightGray;
+    cursor: pointer;
+}
+}        
 
-        &__set-grade {
-            color: variables.$color-white;
-            background-color: variables.$color-orange;
+&__set-grade {
+    color: variables.$color-white;
+    background-color: variables.$color-orange;
 
 
-            &:hover {
-                color: variables.$color-white;
-                background-color: variables.$color-orange;
-            }
-        }
-    }
+&:hover {
+    color: variables.$color-white;
+    background-color: variables.$color-orange;
+}
+}
+}
 
-    &__button {
-        @include mixins.button;
+&__button {
+    @include mixins.button;
 
-        &:hover {
-            @include mixins.hover-button;
-        }
-    }
+&:hover {
+    @include mixins.hover-button;
+}
+}
 }
 
 .rating--done {
@@ -89,22 +89,22 @@ body {
     display: none;
     align-items: center;
 
-    &__title--done {
-        @include mixins.title;
-    }
+&__title--done {
+    @include mixins.title;
+}
 
-    &__confirm {
-        margin-top: 10px;
-        padding: 10px 10px 7px 10px;
-        color: variables.$color-orange;
-        background-color: variables.$color-lightDarkGray;
-        border-radius: 20px;
-    }
+&__confirm {
+    margin-top: 10px;
+    padding: 10px 10px 7px 10px;
+    color: variables.$color-orange;
+    background-color: variables.$color-lightDarkGray;
+    border-radius: 20px;
+}
 
-    &__description--done {
-        @include mixins.description;
-        text-align: center;
-    }
+&__description--done {
+    @include mixins.description;
+    text-align: center;
+}
 }
 
 .rating--block {
@@ -115,14 +115,14 @@ body {
     color: variables.$color-lightGray;
     transition: 2s;
 
-    &__return {
-        @include mixins.button;
-        cursor: pointer;
-    
-        &:hover {
-            @include mixins.hover-button;
-        }
-    }
+&__return {
+    @include mixins.button;
+    cursor: pointer;
+
+&:hover {
+    @include mixins.hover-button;
+}
+}
 }
 
 footer {
@@ -132,10 +132,10 @@ footer {
     width: 100%;
     text-align: center;
 
-    .attribution {
-        font-style: italic;
-        font-size: 18px;
-    }
+.attribution {
+    font-style: italic;
+    font-size: 18px;
+}
 }
 
     

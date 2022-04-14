@@ -27,16 +27,16 @@ let ratingDone = document.querySelector('.rating--done-js')
 
 function confirm() {
     if(evaluation === null) {
-        ratingBlock.style.display = 'flex'
-        rating.style.display = 'none'
+        ratingBlock.classList.add('rating--block__active')
+        rating.classList.add('rating__inactive')
         return
     }
-    rating.style.display = 'none'
-    ratingDone.style.display = 'flex'
+    rating.classList.add('rating__inactive')
+    ratingDone.classList.add('rating--done__active')
 }
 
 function goBack() {
-    rating.style.display = 'flex'
-    ratingBlock.style.display = 'none'
+    ratingBlock.classList.remove('rating--block__active')
+    rating.classList.remove('rating__inactive')
 }
 

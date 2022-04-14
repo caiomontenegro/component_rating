@@ -90,6 +90,9 @@ body {
   color: #fb7413;
   background-color: #FFF;
 }
+.rating__inactive {
+  display: none;
+}
 
 .rating--done {
   display: flex;
@@ -121,6 +124,9 @@ body {
   margin-top: 15px;
   line-height: 25px;
   text-align: center;
+}
+.rating--done__active {
+  display: flex;
 }
 
 .rating--block {
@@ -154,6 +160,9 @@ body {
   cursor: pointer;
   color: #fb7413;
   background-color: #FFF;
+}
+.rating--block__active {
+  display: flex;
 }
 
 footer {

@@ -85,14 +85,16 @@ body {
   }
 
   &__inactive {
-    display: none;
+    pointer-events: none;
+    opacity: 0;
   }
 }
 
 .rating--done {
   @include rating;
-  display: none;
   align-items: center;
+  pointer-events: none;
+  opacity: 0;
 
   &__title--done {
     @include title;
@@ -112,17 +114,18 @@ body {
   }
 
   &__active {
-    display: flex;
+    pointer-events: auto;
+    opacity: 1;
   }
 }
 
 .rating--block {
   @include rating;
-  display: none;
+  opacity: 0;
   font-size: 25px;
   text-align: center;
   color: $color-lightGray;
-  transition: 2s;
+  pointer-events: none;
 
   &__return {
     @include button;
@@ -133,7 +136,8 @@ body {
     }
   }
   &__active {
-    display: flex;
+    pointer-events: auto;
+    opacity: 1;
   }
 }
 

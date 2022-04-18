@@ -13,9 +13,13 @@ body {
   display: flex;
   flex-direction: column;
   width: 400px;
-  margin: 6rem auto;
   padding: 35px;
+  margin: 10rem auto;
   border-radius: 20px;
+  position: absolute;
+  transition: 1s;
+  right: 0;
+  left: 0;
   font-family: "Overpass";
   background-color: #252d37;
 }
@@ -91,20 +95,26 @@ body {
   background-color: #FFF;
 }
 .rating__inactive {
-  display: none;
+  pointer-events: none;
+  opacity: 0;
 }
 
 .rating--done {
   display: flex;
   flex-direction: column;
   width: 400px;
-  margin: 6rem auto;
   padding: 35px;
+  margin: 10rem auto;
   border-radius: 20px;
+  position: absolute;
+  transition: 1s;
+  right: 0;
+  left: 0;
   font-family: "Overpass";
   background-color: #252d37;
-  display: none;
   align-items: center;
+  pointer-events: none;
+  opacity: 0;
 }
 .rating--done__title--done {
   color: #FFF;
@@ -126,23 +136,28 @@ body {
   text-align: center;
 }
 .rating--done__active {
-  display: flex;
+  pointer-events: auto;
+  opacity: 1;
 }
 
 .rating--block {
   display: flex;
   flex-direction: column;
   width: 400px;
-  margin: 6rem auto;
   padding: 35px;
+  margin: 10rem auto;
   border-radius: 20px;
+  position: absolute;
+  transition: 1s;
+  right: 0;
+  left: 0;
   font-family: "Overpass";
   background-color: #252d37;
-  display: none;
+  opacity: 0;
   font-size: 25px;
   text-align: center;
   color: #959eac;
-  transition: 2s;
+  pointer-events: none;
 }
 .rating--block__return {
   margin-top: 25px;
@@ -162,7 +177,8 @@ body {
   background-color: #FFF;
 }
 .rating--block__active {
-  display: flex;
+  pointer-events: auto;
+  opacity: 1;
 }
 
 footer {
